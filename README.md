@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Probleme rezolvate pentru instrucțiunea repetitivă while în c++</title>
+</head>
+<body>
+ <head>
+  <title>Instructiunea repetitiva while in c++</title>
+  <style>
+    .alineat1 {
+      text-indent: 30px;
+    }
+    .alineat2 {
+      text-indent: 60px;
+    }
+  </style>
+
+<h1>Exemple</h1>
+<h2>Exemplul 1</h2>
+<p>
+<p>int n = 5; </p>
+<p>while (n < 10) </p>
+<p>{</p>
+    <p class="alineat1">n=n+2; </p>
+<p>}</p>
+<p>cout<< n;</p>
+</p>
+<h1>Explicație</h1>
+<p>Inițial, n este 5. Cum 5 < 10, se execută instrucțiunea n=n+2, n devenind 7. Și 7 < 10, așa că n ajunge la valoarea 9. Se intră din nou în while, iar apoi n devine 11. De data asta 11 < 10 este fals, așa că se iese din while și se continuă cu execuția următoarei instrucțiuni din program.</p>
+<p>
+Următorul program citește valoarea variabilei n și calculează suma primelor n numere naturale. Rulați-l analizând rezultatul pentru diverse valori ale lui n, inclusiv 0.
+</p>
+<h2>Exemplul 2</h2>
+<p>
+<p>#include <iostream> </p>
+<p>using namespace std; </p>
+<p>int main ( ) </p>
+<p>{ </p>
+<p class="alineat1">int n; </p>
+    <p class="alineat1">cin >> n; </p>
+    <p class="alineat1">int S = 0; </p>
+    <p class="alineat1">int i = 1; </p>
+    <p class="alineat1">while(i <= n) </p>
+    <p class="alineat1">{ </p>
+        <p class="alineat2">S=S+i; </p>
+        <p class="alineat2">i++; </p>
+    <p class="alineat1">} </p>
+    <p class="alineat1">cout << S << endl; </p>
+    <p class="alineat1">return 0; </p>
+<p>} </p>
+</p>
+<h1>Explicație</h1>
+<p>
+Programul calculeaza suma tuturor numerelor mai mici decât n. Se observă că variabila i incepe de la 1. Instructiunea "while" pune condiția că dacă i este mai mic sau egal decat n, acesta este adunat in S. Atâta timp cât condiția din while se verifică, programul va executa instrucțiunea de a aduna fiecare număr i ce creste cu  1 după fiecare adunare. În momentul în care condișia din while nu va mai fi adevarata, adică i va fi mai mare decât n, se returneză suma S, iar structura repetitivă se oprește.  
+</p>
+<style>
+  body {
+    background-color:#163823;
+  }
+</style>
+</body>
+</html>
